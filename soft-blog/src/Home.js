@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div className="home">
-     <BlogList blogs={blogs} titleblog="all blogs " handleDelete={handleDelete}   />
+     <BlogList blogs={blogs} titleblog="all blogs " handleDelete={handleDelete} />
     </div>
   );
 };
