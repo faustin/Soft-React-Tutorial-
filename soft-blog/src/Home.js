@@ -28,6 +28,12 @@ const Home = () => {
       id: 5,
     },
   ]);
+
+  const [name,setName]=useState('Mario');
+
+
+
+
   const handleDelete=(id)=>{
     const newBlogs=blogs.filter(blog=>blog.id!==id )
     setBlogs(newBlogs);
@@ -37,6 +43,8 @@ const Home = () => {
   return (
     <div className="home">
      <BlogList blogs={blogs} titleblog="all blogs " handleDelete={handleDelete} />
+     <button onClick={()=>setName("Faustin")}>change  name </button>
+     {name}
     </div>
   );
 };
